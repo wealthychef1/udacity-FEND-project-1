@@ -9,8 +9,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.title-row{
-       text-align: right;
+.title-row {
+ text-align: right;
  text-transform: uppercase;
 }
 .giant-font {
@@ -42,16 +42,23 @@ body {
 
 .smaller-image {
     height: 200px;
-    width: 555px;
+    width: 360px;
 }
+
 a {
     color: #cc5200;
+}
+
+@media screen and (max-width: 1200px) {
+    .smaller-image {
+    height: 180px;
+    max-width: 300px;
 }
 
 
 
 @media screen and (max-width: 490px) {
-    .title-row, h2 {
+  .title-row, h2 {
         text-align: center;
         display: block;
         margin-left: auto;
@@ -66,10 +73,18 @@ a {
 
     }
     .header-img {
-     float: none;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-
- }
+       float: none;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
 }
+
+@media screen and (max-width: 400px) {
+    .smaller-image {
+    height: 160px;
+    max-width: 250px;
+}
+
+
+
